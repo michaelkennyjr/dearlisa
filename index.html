@@ -3,16 +3,12 @@
 <head>
 </head>
 <body>
-  <p id="wed"></p>
-  <p id="today"></p>
-  <p id="test">Uh-oh</p>
   <script>
-    var wedDate = new Date(2019, 5, 8);
-    var today = new Date();
-    document.getElementById("wed").innerHTML = wedDate;
-    document.getElementById("today").innerHTML = today;
-    redir = "http://michaelkennyjr.github.io/dearlisa/" + Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24) + ".html";
-    document.getElementById("test").innerHTML = redir;
+    window.onload = function() {
+      var wedDate = new Date(2019, 5, 8);
+      var today = new Date();  
+      window.location.replace("http://michaelkennyjr.github.io/dearlisa/" + Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24) - 3 + ".html");
+    }
   </script>
 </body>
 </html>

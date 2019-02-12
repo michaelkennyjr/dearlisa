@@ -1,23 +1,13 @@
 <!doctype HTML>
 <html>
 <head>
-  <style type="text/css">
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
-    
-    .bg {
-      background-image: url("113.jpg");
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
 </head>
 <body>
-  <div class="bg"></div>
-  <p>I am me</p>
+  <p id="test">Uh-oh</p>
+  <script>
+    var wedDate = new Date(2019, 5, 8);
+    var today = new Date();
+    document.getElementById("test").innerHTML = wedDate - today;
+  </script>
 </body>
 </html>

@@ -3,10 +3,14 @@
 <head>
 </head>
 <body>
+  <p id="wed"></p>
+  <p id="today"></p>
   <p id="test">Uh-oh</p>
   <script>
     var wedDate = new Date(2019, 5, 8);
     var today = new Date();
+    document.getElementById("wed").innerHTML = wedDate;
+    document.getElementById("today").innerHTML = today;
     document.getElementById("test").innerHTML = wedDate - today;
   </script>
 </body>

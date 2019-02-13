@@ -65,5 +65,15 @@
     Love,<br><br>
     Michael
   </div>
+  <script>
+    if (window.innerWidth > 1200) {
+      document.getElementById("scrollbox").style.left = "calc(100% - 1080px)";
+      document.getElementById("scrollbox").style.right = "calc(100% - 1080px)";
+    }
+    if (window.innerWidth <= 1200) {
+      document.getElementById("scrollbox").style.left = "5%";
+      document.getElementById("scrollbox").style.right = "5%";
+    }
+  </script>
 </body>
 </html>

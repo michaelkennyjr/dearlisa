@@ -1,0 +1,92 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <style type="text/css">
+  * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(214, 240, 253);
+    }
+    
+    body {height: 100%;}
+    
+    #scrollbox {
+      position: fixed;
+      left: 5%;
+      top: 5vw;
+      right: 5%;
+      bottom: calc(60% + 1.25vw);
+      padding: 28px;
+      overflow: auto;
+    }
+    
+    #frame {
+      position: fixed;
+      left: 0;
+      top: calc(40% + 1.25vw);
+      right: 0;
+      bottom: 0;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+    
+    div {
+      font-family: 'Roboto', sans-serif;
+      text-align: justify;
+      font-weight: 300;
+    }
+    
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      text-align: left;
+      font-size: 18pt;
+      font-weight: 700;
+    }
+    
+    h1 {margin: 4px auto;}
+    h2 {margin: 0 auto 32px auto;}
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Saturday, February 16, 2019</h1>
+    <h2>112 days to go</h2>
+    Welcome back! If you're reading this, that probably means it's Saturday, February 16, and we're either headed to or already in Michigan.<br><br>
+    When I was a kid, I hated going to Michigan. Sure, we got to run around and play outside, but it always felt like a chore for me. We had to drive for what seemed like forever, leave behind the modern computers and video games, and be outside and do work and dumb stuff like that.<br><br>
+    I started to appreciate the place as I grew older, but with you it's taken on a whole new meaning. From that first time you came with us to my family's Fourth of July party, I feel like we've felt especially connected there. Maybe it's the trees, or the freedom and tranquility, or maybe there's just something in the air. But Michigan has played a big role in cultivating our love.<br><br>
+    That's why I'm so glad we finally have a place to come to again! Yes, Dad, I know it's technically your place. Yes, I still miss the old house and all the memories we left in it. But there are new memories to be made and old experiences to be lived right now!<br><br>
+    Let's go consume the alcohol of our choice at Greenbush, Round Barn, or Journeyman. Let's go for a walk over to the beach, stroll around the Garden Center, and get coffee and tea at Infusco. Heck, let's go somewhere new too!<br><br>
+    Most of all, let's enjoy a weekend alone away from the speed and pressures of home. You once told me that you love going to Michigan with me because we're all alone, away from everything, and we can be our true selves. I love that, and I want to embrace it this weekend as we celebrate five wonderful years of romance!<br><br>
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="112.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1200) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 1080px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 1080px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

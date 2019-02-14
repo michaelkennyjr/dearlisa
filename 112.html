@@ -81,7 +81,23 @@
       <!--<img src="112.jpg">-->
     </div>
   </div>
+  
   <!--Redirect to "Too Early" page if the day hasn't come yet-->
   <!--<script src="tooearly.js"></script>-->
+  
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1200) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 1080px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 1080px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
 </body>
 </html>

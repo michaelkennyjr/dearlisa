@@ -14,16 +14,19 @@
       background-color: rgb(214, 240, 253);
     }
     
-    #photo {
+    #frame {
+      text-align: center;
       position: fixed;
-      bottom: 2.5%;
-      height: 45%;
-      margin: 0 auto;
-      background: url(112.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      bottom: 2.5vw;
+      left: 2.5%;
+      right: 2.5%;
+      height: 55%;
+    }
+    
+    #photo {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
     }
     
     body {height: 100%;}
@@ -46,6 +49,13 @@
       color: white;
     }
     
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+    
     h1, h2 {
       font-family: 'Roboto', sans-serif;
       text-align: left;
@@ -63,7 +73,11 @@
     <h1>Friday, February 16, 2019</h1>
     <h2>112 days to go</h2>
   </div>
-  <div id="photo"></div>
+  <div id="frame">
+    <div id="photo">
+      <img src="http://michaelkennyjr.github.io/dearlisa/112.jpg">
+    </div>
+  </div>
   <!--Redirect to "Too Early" page if the day hasn't come yet-->
   <!--<script src="tooearly.js"></script>-->
 </body>

@@ -35,6 +35,11 @@
       background-color: blue;
     }
     
+    img {
+      object-fit: contain;
+      object-position: bottom;
+    }
+    
     div {
       font-family: 'Roboto', sans-serif;
       text-align: justify;
@@ -69,7 +74,9 @@
     Love,<br><br>
     Michael
   </div>
-  <div id="frame"></div>
+  <div id="frame">
+    <img src="112.jpg">
+  </div>
   <script>
     window.onload = function() {resize()};
     document.getElementsByTagName("BODY")[0].onresize = function() {resize()};

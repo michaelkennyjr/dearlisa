@@ -7,8 +7,12 @@
     window.onload = function() {
       var wedDate = new Date(2019, 5, 8);
       var today = new Date();
-      var x = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24 - 3);
-      window.location.replace("http://michaelkennyjr.github.io/dearlisa/" + x.toString() + ".html");
+      var x = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24);
+      if (x > 112) {
+        window.location.replace("http://michaelkennyjr.github.io/dearlisa/113.html");
+      } else {
+        window.location.replace("http://michaelkennyjr.github.io/dearlisa/" + x.toString() + ".html");
+      }
     }
   </script>
 </body>

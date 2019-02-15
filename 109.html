@@ -66,7 +66,7 @@
     Michael
   </div>
   <div id="frame">
-  <img src="109.jpg">
+  <img id="pic" src="109.jpg">
   </div>
   <script>
     window.onload = function() {resize()};
@@ -76,13 +76,13 @@
       if (window.innerWidth > 1000) {
         document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
         document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
-        document.getElementById("img").clientWidth = "1000px";
-        document.getElementById("img").style.objectFit = "contain";
+        document.getElementById("pic").clientWidth = "1000px";
+        document.getElementById("pic").style.objectFit = "contain";
       } else {
         document.getElementById("scrollbox").style.left = "5%";
         document.getElementById("scrollbox").style.right = "5%";
-        document.getElementById("img").clientWidth = "100%";
-        document.getElementById("img").style.objectFit = "cover";
+        document.getElementById("pic").clientWidth = "100%";
+        document.getElementById("pic").style.objectFit = "cover";
       }
     }
   </script>

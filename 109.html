@@ -21,22 +21,24 @@
       z-index: -1;
     }
     
-    #leftframe {
+    #leftframe, #rightframe {
       height: 100%;
       width: 100%;
       position: fixed;
+      z-index: -2;
+      object-fit: contain;
+    }
+    
+    #leftframe {
       left: 0;
       right: 50%;
-      z-index: -2;
+      object-position: left;
     }
     
     #rightframe {
-      height: 100%;
-      width: 100%;
-      position: fixed;
       right: 0;
       left: 50%;
-      z-index: -2;
+      object-position: right;
     }  
     
     img {

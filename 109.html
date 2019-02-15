@@ -41,6 +41,10 @@
       object-position: right;
     }  
     
+    #leftpic, #rightpic {
+      opacity: 0;
+    }
+    
     img {
       width: 100%;
       height: 100%;
@@ -104,13 +108,21 @@
         document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
         document.getElementById("pic").clientWidth = "1000px";
         document.getElementById("pic").style.objectFit = "contain";
-        document.getElementById("leftpic").style.opacity = "1";
-        document.getElementById("rightpic").style.opacity = "1";
+        // document.getElementById("leftpic").style.opacity = "1";
+        // document.getElementById("rightpic").style.opacity = "1";
       } else {
         document.getElementById("scrollbox").style.left = "5%";
         document.getElementById("scrollbox").style.right = "5%";
         document.getElementById("pic").clientWidth = "100%";
         document.getElementById("pic").style.objectFit = "cover";
+        // document.getElementById("leftpic").style.opacity = "0";
+        // document.getElementById("rightpic").style.opacity = "0";
+      }
+      
+      if(window.innerWidth > document.getElementById("pic").clientWidth) {
+        document.getElementById("leftpic").style.opacity = "1";
+        document.getElementById("rightpic").style.opacity = "1";
+      } else {
         document.getElementById("leftpic").style.opacity = "0";
         document.getElementById("rightpic").style.opacity = "0";
       }

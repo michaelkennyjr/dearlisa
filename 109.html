@@ -77,10 +77,12 @@
         document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
         document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
         document.getElementById("img").clientWidth = "1000px";
+        document.getElementById("img").style.objectFit = "contain";
       } else {
         document.getElementById("scrollbox").style.left = "5%";
         document.getElementById("scrollbox").style.right = "5%";
         document.getElementById("img").clientWidth = "100%";
+        document.getElementById("img").style.objectFit = "cover";
       }
     }
   </script>

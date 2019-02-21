@@ -1,0 +1,42 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: rgb(61, 109, 211);
+    }
+    
+    h1, h2, div {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Sunday, February 23, 2019</h1>
+    <h2>104 days to go</h2>
+    For four years I only knew you with bangs. I loved the bangs, but I love your current hairstyle too. Comparing them is like asking me whether I prefer steak or chicken. They're both my favorite food: meat!<br><br>
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="104.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

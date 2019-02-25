@@ -1,0 +1,43 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: rgb(107, 72, 68);
+    }
+    
+    h1, h2, div {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Tuesday, February 26, 2019</h1>
+    <h2>102 days to go</h2>
+    Of all the good ideas you've had, I think getting Broadway in Chicago season tickets was one of my favorites. Even the clunkers make for good stories. The good ones have opened us up to new experiences and given us lots of laughs. And I can't wait to see Dear Evan Hansen tonight!<br><br>
+    Love,<br><br>
+    Michael<br><br>
+    P.S. Yes, I know Hamilton was not part of our season tickets, but it is Broadway in Chicago.
+  </div>
+  <div id="frame">
+    <img src="102.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

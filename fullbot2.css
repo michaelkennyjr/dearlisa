@@ -54,6 +54,10 @@
     
     @media (max-width: 1000px) {
       
+      html, body {
+        -webkit-text-size-adjust: none;
+      }
+          
       div {
         font-size: 1.8vh;
       }

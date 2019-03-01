@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: #AC1F43;
+    }
+    
+    h1, h2, div {
+      color: white;
+    }
+    
+    #scrollbox {
+      bottom: 45%;
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Friday, March 1, 2019</h1>
+    <h2>99 days to go</h2>
+    How to Get Away with Murder has been appointment viewing for us almost as long as we've been dating. If that episode last night was the last one, then what a ride it's been! First I loved that show, then I kinda liked it, then I hated it, then I was like "Whaaat?", then I loved it again, then I was "eh" about it, then I hated it, and now… well... now how do we feel?<br><br>
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="99.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

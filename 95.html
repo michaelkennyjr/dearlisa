@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: #FFE3EB;
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Tuesday, March 5, 2019</h1>
+    <h2>95 days to go</h2>
+    Bunny and Kitty being best friends<br>
+    Together forever, the fun never ends<br>
+    Solving mysteries one hug at a time<br>
+    Bunny and Kitty, two of a kind!
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="95.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

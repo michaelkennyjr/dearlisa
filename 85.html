@@ -1,0 +1,56 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: rgb(55, 30, 70);
+    }
+    
+    body, h1, h2 {
+      color: white;
+    }
+    
+    @media (max-width: 1000px) {
+      body {
+        -webkit-text-size-adjust: none;
+      }
+        
+      div {
+        font-size: 2.2vh;
+      }
+        
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Friday, March 15, 2019</h1>
+    <h2>85 days to go</h2>
+    I withstood the cold for two Chi-Town Risings just so I could kiss you at midnight. I mean, other benefits came of it too. I became a producer, a freelance photographer, and a social media coordinator, and I got to see some good live music. But really I was in it for the kiss.<br><br>
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="85.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -33,10 +33,19 @@
     client.open("GET", "pages.xml", true);
     client.send();
 
+    var wedDate = new Date(2019, 5, 8);
+    var today = new Date();
+    var x = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24);
+    var url = window.location.pathname;
+    url = url.replace("/dearlisa/", "");
+    url = url.replace(".html", "");
+    url = url.replace("test", "");
+    var daysLeft = Number(url);
+
     function xmlLoad(xml) {
         var xmlDoc = xml.responseXML;
 	var num = 1;
-        var resp = xmlDoc.getElementsByTagName("today")[num].childNodes[0].nodeValue;
+        var resp = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
 	document.getElementById("date").innerHTML = resp;
     }
 

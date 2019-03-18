@@ -9,17 +9,17 @@ var daysLeft = 82 - Number(url);
 var client = new XMLHttpRequest();
 client.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        xmlLoad(this);
+        xmlLoad(this, Number(url));
     }
 };
 client.open("GET", "pages.xml", true);
 client.send();
 
 // Function to fill in HTML using XML response
-function xmlLoad(xml) {
+function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
     var today = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
     
     document.getElementById("date").innerHTML = today;
-    document.getElementById("count").innerHTML = "Something";
+    document.getElementById("count").innerHTML = cd + "to go!";
 }

@@ -22,7 +22,7 @@ function xmlLoad(xml, cd) {
     
     // Fill in body text with each paragraph
     var text = "";
-    var btext = xmlDoc.getElementsByTagName("text")[daysleft].childNodes;
+    var btext = xmlDoc.getElementsByTagName("text")[daysLeft].childNodes;
     for (i = 0; i < btext.length; i++) {
         text += btext[i].childNodes[0].nodeValue + "<br><br>";
     }

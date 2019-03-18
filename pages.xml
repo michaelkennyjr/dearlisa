@@ -4,7 +4,10 @@
   
   <page id="99">
     <h>Friday, March 1, 2019</h>
-    <para>How to Get Away with Murder has been appointment viewing for us almost as long as we've been dating. If that episode last night was the last one, then what a ride it's been! First I loved that show, then I kinda liked it, then I hated it, then I was like "Whaaat?", then I loved it again, then I was "eh" about it, then I hated it, and now… well… now how do we feel?</para>
+    <text>
+      <para>This is my first paragraph.</para>
+      <para>This is my second paragraph.</para>
+    </text>
     <image>99.jpg</image>
   </page>
   

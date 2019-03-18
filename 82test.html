@@ -23,32 +23,6 @@
     <img id="image" src="82.jpg">
   </div>
   <script>
-
-    var client = new XMLHttpRequest();
-    client.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-        xmlLoad(this);
-        }
-    };
-    client.open("GET", "pages.xml", true);
-    client.send();
-
-    var wedDate = new Date(2019, 5, 8);
-    var today = new Date();
-    var x = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24);
-    var url = window.location.pathname;
-    url = url.replace("/dearlisa/", "");
-    url = url.replace(".html", "");
-    url = url.replace("test", "");
-    var daysLeft = 82 - Number(url);
-
-    function xmlLoad(xml) {
-        var xmlDoc = xml.responseXML;
-	var num = 1;
-        var resp = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
-	document.getElementById("date").innerHTML = resp;
-    }
-
     window.onload = function() {resize()};
     document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
     

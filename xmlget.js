@@ -19,6 +19,7 @@ client.send();
 function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
     var today = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
+    console.log(cd);
     
     document.getElementById("date").innerHTML = today;
     document.getElementById("count").innerHTML = cd + "to go!";

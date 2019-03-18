@@ -35,7 +35,8 @@
 
     function xmlLoad(xml) {
         var xmlDoc = xml.responseXML;
-        var resp = xmlDoc.getElementsByTagName("today")[1].childNodes[0].nodeValue;
+	var num = 1;
+        var resp = xmlDoc.getElementsByTagName("today")[num].childNodes[0].nodeValue;
 	document.getElementById("date").innerHTML = resp;
     }
 

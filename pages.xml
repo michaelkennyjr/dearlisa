@@ -17,7 +17,14 @@
     <image>98.jpg</image>
   </page>
 
+  <page>
   <date>TESTING BLEE BLAH</date> 
+    <text>
+      <para>This is my first paragraph.</para>
+      <para>This is my last paragraph.</para>
+    </text>
+    <image>82.jpg</image>
+  </page>
   <date>Tuesday, March 19, 2019</date>
   <date>Wednesday, March 20, 2019</date>
   <date>Thursday, March 21, 2019</date>

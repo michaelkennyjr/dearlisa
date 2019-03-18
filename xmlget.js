@@ -21,5 +21,5 @@ function xmlLoad(xml) {
     var today = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
     
     document.getElementById("date").innerHTML = today;
-    document.getElementById("count").innerHTML = daysLeft + "DAYS LEFT!";
+    document.getElementById("count").innerHTML = "Something";
 }

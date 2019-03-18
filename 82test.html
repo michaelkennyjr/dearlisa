@@ -32,12 +32,11 @@
     };
     client.open("GET", "pages.xml", true);
     client.send();
-	  
-    console.log(client);
 
     function xmlLoad(xml) {
         var xmlDoc = xml.responseXML;
-        document.getElementById("today").innerHTML = xmlDoc.getElementsByTagName("today")[0].childNodes[0].nodeValue;
+        var resp = xmlDoc.getElementsByTagName("today")[0].childNodes[0].nodeValue;
+	console.log(resp);
     }
 
     window.onload = function() {resize()};

@@ -20,6 +20,15 @@ function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
     var today = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
     
+    // Fill in body text with each paragraph
+    var text = "";
+    var btext = xmlDoc.getElementsByTagName("text")[daysleft].childNodes;
+    for (i = 0; i < btext.length; i++) {
+        text += btext[i].childNodes[0].nodeValue + "<br><br>";
+    }
+    text += "Love,<br><br>MICHAELANGELO";
+    
     document.getElementById("date").innerHTML = today;
     document.getElementById("count").innerHTML = cd + " days to go";
+    document.getElementById("bodytext").innerHTML = text;
 }

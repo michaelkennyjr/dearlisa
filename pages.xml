@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <collection>
-  
-  <page id="99">
-    <h>Friday, March 1, 2019</h>
-    <text>
-      <para>This is my first paragraph.</para>
-      <para>This is my second paragraph.</para>
-    </text>
-    <image>99.jpg</image>
-  </page>
-  
-  <page id="98">
-    <h>Saturday, March 2, 2019</h>
-    <para>I hope your electric blanket has brought you lots of warmth and happiness. You look so cute snuggled up under it! Though I do still feel a little bad for Lamb Chop the Llama.</para>
-    <image>98.jpg</image>
-  </page>
 
   <page>
   <date>TESTING BLEE BLAH</date> 
@@ -25,6 +10,7 @@
     </text>
     <image>82.jpg</image>
   </page>
+  
   <date>Tuesday, March 19, 2019</date>
   <date>Wednesday, March 20, 2019</date>
   <date>Thursday, March 21, 2019</date>

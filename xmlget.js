@@ -25,7 +25,7 @@ function xmlLoad(xml, cd) {
     var todayPage = xmlDoc.getElementsByTagName("text")[daysLeft].childNodes;
     var i;
     for (i = 0; i < todayPage.length; i++) {
-        insText += todayPage[i].nodeValue + "<br><br>";
+        insText += todayPage.getElementsByTagName("para")[i].nodeValue + "<br><br>";
     }
     insText += "Love,<br><br>Michael";
     

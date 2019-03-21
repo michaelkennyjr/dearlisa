@@ -23,11 +23,12 @@ function xmlLoad(xml, cd) {
     
     // Fill in body text with each paragraph
     var insText = "";
-    var todayPage = xmlDoc.getElementsByTagName("paras")[daysLeft].childNodes;
-    console.log(todayPage);
+    var todayPage = xmlDoc.getElementsByTagName("paras")[daysLeft].childNodes[0];
+    var todayPg = todayPage.childNodes;
+    console.log(todayPg);
     var i;
-    for (i = 0; i < todayPage.length; i++) {
-        insText += todayPage[i].nodeValue + "<br><br>";
+    for (i = 0; i < todayPg.length; i++) {
+        insText += todayPg[i].nodeValue + "<br><br>";
     }
     insText += "Love,<br><br>Michael";
     

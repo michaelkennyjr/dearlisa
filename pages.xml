@@ -2,12 +2,12 @@
 
 <collection>
   <page>
-  <date>Monday, March 18, 2019</date> 
-    <paras>
-      <pg>This is my first paragraph.</pg>
-      <pg>This is my last paragraph.</pg>
-    </paras>
-    <image>82.jpg</image>
+    <date>Monday, March 18, 2019</date> 
+      <paras>
+        <pg>This is my first paragraph.</pg>
+        <pg>This is my last paragraph.</pg>
+      </paras>
+      <image>82.jpg</image>
   </page>
   <page>
     <date>Tuesday, March 19, 2019</date>

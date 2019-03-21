@@ -23,9 +23,10 @@ function xmlLoad(xml, cd) {
     // Fill in body text with each paragraph
     var insText = "";
     var todayPage = xmlDoc.getElementsByTagName("text")[daysLeft].childNodes;
+    console.log(todayPage);
     var i;
     for (i = 0; i < todayPage.length; i++) {
-        insText += todayPage.getElementsByTagName("para")[i].nodeValue + "<br><br>";
+        insText += todayPage[i].nodeValue + "<br><br>";
     }
     insText += "Love,<br><br>Michael";
     

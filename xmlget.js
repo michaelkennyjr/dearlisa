@@ -19,6 +19,7 @@ client.send();
 function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
     var today = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
+    console.log(today);
     
     // Fill in body text with each paragraph
     var insText = "";

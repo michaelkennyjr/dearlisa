@@ -21,14 +21,15 @@ function xmlLoad(xml, cd) {
     var today = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
     
     // Fill in body text with each paragraph
-    var text = "Hello";
-    /* var btext = xmlDoc.getElementsByTagName("text")[daysLeft].childNodes;
-    for (i = 0; i < btext.length; i++) {
-        text += btext[i].childNodes[0].nodeValue + "<br><br>";
+    var insText = "";
+    var todayPage = xmlDoc.ElementsByTagName("text")[daysleft].childNodes;
+    var i;
+    for (i = 0; i < todayPage.length; i++) {
+        insText += todayPage[i].nodeValue + "<br><br>";
     }
-    text += "Love,<br><br>MICHAELANGELO"; */
+    insText += "Love,<br><br>Michael";
     
     document.getElementById("date").innerHTML = today;
     document.getElementById("count").innerHTML = cd + " days to go";
-    document.getElementById("bodytext").innerHTML = text;
+    document.getElementById("bodytext").innerHTML = insText;
 }

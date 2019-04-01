@@ -29,7 +29,7 @@ function xmlLoad(xml, cd) {
     console.log(todayText);
     var i;
     for (i = 0; i < todayText.length; i++) {
-        if (todayText.item(i).nodeType = 1) {
+        if (todayText.item(i).nodeName != "#text") {
             console.log(todayText.item(i).innerHTML);
             insText += todayText.item(i).innerHTML + "<br><br>";
         }

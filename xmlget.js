@@ -28,7 +28,7 @@ function xmlLoad(xml, cd) {
     
     var j;
     for (j = 0; j < todayText.length; j++) {
-        console.log(j + ": " + today.Text.childNodes[j].nodeValue);
+        console.log(j + ": " + todayText.childNodes[j].nodeValue);
     }
     
     console.log(todayText);

@@ -18,7 +18,7 @@ client.send();
 // Function to fill in HTML using XML response
 function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
-    var today = xmlDoc.getElementsByTagName("date")[indx].nodeValue;
+    var today = xmlDoc.getElementsByTagName("date")[indx].childNodes[0].nodeValue;
     console.log(xmlDoc);
     console.log(today);
     

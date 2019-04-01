@@ -3,7 +3,7 @@ var url = window.location.pathname;
 url = url.replace("/dearlisa/", "");
 url = url.replace(".html", "");
 url = url.replace("test", "");
-var daysLeft = 82 - Number(url);
+var indx = 82 - Number(url);
 
 // Make XML request
 var client = new XMLHttpRequest();
@@ -12,25 +12,22 @@ client.onreadystatechange = function() {
         xmlLoad(this, Number(url));
     }
 };
-client.open("GET", "pages.xml", true);
+client.open("GET", "newxml.xml", true);
 client.send();
 
 // Function to fill in HTML using XML response
 function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
-    var today = xmlDoc.getElementsByTagName("date")[daysLeft].childNodes[0].nodeValue;
+    var today = xmlDoc.getElementsByTagName("date")[indx].nodeValue;
     console.log(xmlDoc);
     console.log(today);
     
     // Fill in body text with each paragraph
     var insText = "";
-    var todayTags = xmlDoc.getElementsByTagName("page")[daysLeft].childNodes;
-    console.log(todayTags);
+    var todayText = xmlDoc.getElementsByTagName("allt")[indx].childNodes;
     var i;
-    for (i = 0; i < todayTags.length; i++) {
-        if (todayTags[i].nodeName = "para") {
-          insText += todayTags[i].nodeValue + "<br><br>";
-        }
+    for (i = 0; i < todayText.length; i++) {
+        insText += xmlDoc.getElementsByTagName("allt")[indx].childNodes[i].nodeValue + "<br><br>";
     }
     insText += "Love,<br><br>Michael";
     

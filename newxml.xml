@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<collection>
+  
+  <page>
+    <date>Monday, March 18, 2019</date>
+    <allt>
+      <para>This is my first paragraph.</para>
+      <para>I have another paragraph.</para>
+      <para>This is my last paragraph.</para>
+    </allt>
+    <layout>botpho</layout>
+    <image>82.jpg</image>
+  </page>
+  
+  <page>
+    <date>Tuesday, March 19, 2019</date>
+    <allt>
+      <para>This has just one paragraph.</para>
+    </allt>
+    <layout>fullpho</layout>
+    <image>81.jpg</image>
+  </page>
+  
+</collection>

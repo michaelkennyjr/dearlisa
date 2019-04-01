@@ -27,7 +27,7 @@ function xmlLoad(xml, cd) {
     var todayText = xmlDoc.getElementsByTagName("allt")[indx].childNodes;
     
     var j;
-    for (j = 0; j < today.Text.length; j++) {
+    for (j = 0; j < todayText.length; j++) {
         console.log(j + ": " + today.Text.childNodes[j].nodeValue);
     }
     

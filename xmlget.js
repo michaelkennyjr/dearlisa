@@ -25,6 +25,7 @@ function xmlLoad(xml, cd) {
     // Fill in body text with each paragraph
     var insText = "";
     var todayText = xmlDoc.getElementsByTagName("allt")[indx].childNodes;
+    console.log(todayText);
     var i;
     for (i = 0; i < todayText.length; i++) {
         insText += xmlDoc.getElementsByTagName("allt")[indx].childNodes[i].nodeValue + "<br><br>";

@@ -30,6 +30,7 @@ function xmlLoad(xml, cd) {
     var i;
     for (i = 0; i < todayText.length; i++) {
         if todayText[i].nodeType = 3 {
+            console.log(todayText[i].nodeValue);
             insText += todayText[i].nodeValue + "<br><br>";
         }
     }

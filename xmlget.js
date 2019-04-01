@@ -29,9 +29,9 @@ function xmlLoad(xml, cd) {
     console.log(todayText);
     var i;
     for (i = 0; i < todayText.length; i++) {
-        if todayText[i].nodeType = 3 {
-            console.log(todayText[i].nodeValue);
-            insText += todayText[i].nodeValue + "<br><br>";
+        if todayText.item(i).nodeType = 3 {
+            console.log(todayText.item(i).nodeValue);
+            insText += todayText.item(i).nodeValue + "<br><br>";
         }
     }
     insText += "Love,<br><br>Michael";

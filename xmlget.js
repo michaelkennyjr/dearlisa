@@ -26,15 +26,12 @@ function xmlLoad(xml, cd) {
     var insText = "";
     var todayText = xmlDoc.getElementsByTagName("allt")[indx].childNodes;
     
-    var j;
-    for (j = 0; j < todayText.length; j++) {
-        console.log(j + ": " + todayText[j]);
-    }
-    
     console.log(todayText);
     var i;
     for (i = 0; i < todayText.length; i++) {
-        insText += xmlDoc.getElementsByTagName("allt")[indx].childNodes[i].nodeValue + "<br><br>";
+        if todayText[i].nodeType = 3 {
+            insText += todayText[i].nodeValue + "<br><br>";
+        }
     }
     insText += "Love,<br><br>Michael";
     

@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <collection>
+  
   <page>
-    <date>Monday, March 18, 2019</date> 
+    <date>Monday, March 18, 2019</date>
     <para>This is my first paragraph.</para>
     <para>This is my last paragraph.</para>
     <image>82.jpg</image>
   </page>
+  
   <page>
     <date>Tuesday, March 19, 2019</date>
   </page>
+  
   <page>
     <date>Wednesday, March 20, 2019</date>
   </page>
+  
   <page>
     <date>Thursday, March 21, 2019</date>
   </page>

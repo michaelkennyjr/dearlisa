@@ -24,12 +24,12 @@ function xmlLoad(xml, cd) {
     
     // Fill in body text with each paragraph
     var insText = "";
-    var todayText = xmlDoc.getElementsByTagName("allt")[indx].documentElement.childNodes;
+    var todayText = xmlDoc.getElementsByTagName("allt")[indx].childNodes;
     
     console.log(todayText);
     var i;
     for (i = 0; i < todayText.length; i++) {
-        if todayText.item(i).nodeType = 3 {
+        if (todayText.item(i).nodeType = 3) {
             console.log(todayText.item(i).nodeValue);
             insText += todayText.item(i).nodeValue + "<br><br>";
         }

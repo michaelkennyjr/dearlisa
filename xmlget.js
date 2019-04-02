@@ -24,25 +24,29 @@ function xmlLoad(xml, cd) {
     console.log(tPage);
     
     var i;
-    var node;
     for (i = 0; i < tPage.length; i++) {
         
         // Get name of next node
-        node = tPage.item(i).nodeName;
+        var item = tPage.item(i);
+        var node = item.nodeName;
         
         // Change background color
         if (node == "bg") {
-            document.body.style.backgroundColor = tPage.item(i).innerHTML;
+            document.body.style.backgroundColor = item.innerHTML;
         }
         
         // Change text color
         if (node == "tc") {
-            document.body.style.color = tPage.item(i).innerHTML;
+            document.body.style.color = item.innerHTML;
         }
+        
+        // Change box color
+        if (node == "boxc") {
+            document.getElementById("scrollbox").style.backgroundColor = item.innerHTML;
             
         // Change image
         if (node == "image") {
-            document.getElementById("image").src = tPage.item(i).innerHTML;
+            document.getElementById("image").src = item.innerHTML;
         }
     }
     

@@ -12,7 +12,7 @@ client.onreadystatechange = function() {
         xmlLoad(this, Number(url));
     }
 };
-client.open("GET", "newxml.xml", true);
+client.open("GET", "pages.xml", true);
 client.send();
 
 // Function to fill in HTML using XML response
@@ -25,6 +25,8 @@ function xmlLoad(xml, cd) {
     
     var i;
     for (i = 0; i < tPage.length; i++) {
+        
+        // Change background color
         if (tPage.item(i).nodeName == "bg") {
             document.body.style.backgroundColor = tPage.item(i).innerHTML;
         }

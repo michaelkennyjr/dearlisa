@@ -26,6 +26,7 @@ function xmlLoad(xml, cd) {
     
     // Get nodeList for today's page
     var tPage = xmlDoc.getElementsByTagName("page")[indx].childNodes;
+    console.log(xmlDoc);
     console.log(tPage);
     
     var i;

@@ -28,6 +28,8 @@ function newDay(cd, op) {
       cd = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24);
   }
   
+  console.log(cd);
+  
   // Run xmlGet to reset page to new day
   xmlGet(cd);
   

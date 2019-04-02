@@ -26,7 +26,7 @@ function xmlLoad(xml, cd) {
     var i;
     var bgcolor;
     for (i = 0; i < tPage.length; i++) {
-        if (tPage.item(i).nodeName = "#bg") {
+        if (tPage.item(i).nodeName = "bg") {
             document.body.style.backgroundColor = tPage.item(i).innerHTML;
         }
     }

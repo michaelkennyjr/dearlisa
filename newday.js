@@ -31,7 +31,7 @@ function newDay(cd, op) {
   console.log(cd);
   
   // Run xmlGet to reset page to new day
-  xmlGet(cd);
+  xmlGet("cd = " + cd);
   
   // Return the new countdown number
   return cd;

@@ -1,42 +1,50 @@
 <!doctype HTML>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-  <link id="css" rel="stylesheet" type="text/css" href="styles/botpho.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link id="css" rel="stylesheet" type="text/css" href="styles/botpho.css">
 </head>
 
 <body>
-  <div id="scrollbox">
-    <h1 id="date">Error!</h1>
-    <h2 id="count"></h2>
-    <span id="bodytext"></span>
-  </div>
-  <div id="frame">
-    <img id="image">
-  </div>
-  <div id="butt" style="width:200px; height:100px; background-color:green" onclick="newDay(82, 1)"></div>
+    <div id="scrollbox">
+        <h1 id="date">Error!</h1>
+	<h2 id="count"></h2>
+	<span id="bodytext"></span>
+    </div>
+    <div id="frame">
+	<img id="image">
+    </div>
+    <div id="backone" style="width:200px; height:100px; background-color:green"></div>
 	
-  <script src="xmlget.js"></script>
-  <script src="newday.js"></script>
-  <script>
-    window.onload = function() {resize()};
-    window.onload = xmlGet(67);
-    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
-    
-    function resize() {
-      if (window.innerWidth > 1000) {
-        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
-        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
-      } else {
-        var imgh = document.getElementById("image").height;
-        var winw = window.innerWidth;
-        var bot = imgh + winw * 0.05;
+    <script src="xmlget.js"></script>
+    <script src="newday.js"></script>
+    <script>
+	// Get today's countdown number
+	var wedDate = new Date(2019, 5, 8);
+	var today = new Date();
+	var cd = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24);
+	
+	// Resize window appropriately and load page from XML
+	window.onload = function() {resize()};
+	window.onload = xmlGet(cd);
+	document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
 
-	document.getElementById("scrollbox").style.bottom = bot + "px";
-        document.getElementById("scrollbox").style.left = "5%";
-        document.getElementById("scrollbox").style.right = "5%";
-      }
-    }
-  </script>
+	document.getElementById("backone").onclick = newDay(cd, 1);
+
+	function resize() {
+	    if (window.innerWidth > 1000) {
+		document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+		document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+	    } else {
+		var imgh = document.getElementById("image").height;
+		var winw = window.innerWidth;
+		var bot = imgh + winw * 0.05;
+
+		document.getElementById("scrollbox").style.bottom = bot + "px";
+		document.getElementById("scrollbox").style.left = "5%";
+		document.getElementById("scrollbox").style.right = "5%";
+	    }
+	}
+    </script>
 </body>
 </html>

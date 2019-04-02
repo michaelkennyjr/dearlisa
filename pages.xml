@@ -19,10 +19,24 @@
     <date>Testing, April 2, 2019</date>
     <allt>
       <para>This has just one paragraph.</para>
-      <ps>P.S. Hello</ps>
     </allt>
     <layout>botpho</layout>
+    <bg>white</bg>
+    <tc>black</bg>
     <image>photos/copytest.jpg</image>
   </page>
+  
+  <page cd="68">
+    <date>Monday, April 1, 2019</date>
+    <allt>
+      <para>There are only 68 days left until 6/8! Can you believe it?</para>
+      <para>I am so ready to be married to you. I don't know about you, but I've been dreaming about 6/8 for a long time. And not just getting married, but getting married to you. I'm going to be walking around with a ring on my finger, showing it off to everyone because it's a symbol of the fact that I have you as my life partner! How amazing is that? I think I might have the people at work start calling me Lisa's husband.</para>
+      <para>I'm not prepared to wait 68 more days, but I'll do what I must to get to that day. Celebrating with you is going to be incredible. I already get misty-eyed just thinking about it sometimes. I LOVE YOU!</para>
+      <ps>P.S. ... April Fool's.</ps>
+    </allt>
+    <layout>fullpho</layout>
+    <tc>black</bg>
+    <image>photos/copytest.jpg</image>
+  </page>  
   
 </collection>

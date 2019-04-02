@@ -5,6 +5,11 @@ url = url.replace(".html", "");
 url = url.replace("test", "");
 var indx = 82 - Number(url);
 
+// Get days left in countdown
+var wedDate = new Date(2019, 5, 8);
+var today = new Date();
+var dl = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24);
+
 // Make XML request
 var client = new XMLHttpRequest();
 client.onreadystatechange = function() {
@@ -80,6 +85,11 @@ function xmlLoad(xml, cd) {
                 
             // Replace body text with entirety of insText
             document.getElementById("bodytext").innerHTML = insText;
+        }
+        
+        // Change layout
+        if (node == "layout") {
+            document.getElementById("css").href = item.innerHTML;
         }
         
         // Change image

@@ -22,6 +22,8 @@ function xmlLoad(xml, cd) {
     // Get nodeList for today's page
     var tPage = xmlDoc.getElementsByTagName("page")[indx].childNodes;
     console.log(tPage);
+    var test = tPage.getElementsByTagName("bg")[0].childNodes[0].innerHTML;
+    console.log(test);
     
     // Get today's full date, store as "today"
     var today = xmlDoc.getElementsByTagName("date")[indx].childNodes[0].nodeValue;

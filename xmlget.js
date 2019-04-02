@@ -31,7 +31,7 @@ function xmlGet(mynum) {
         // Get nodeList for today's page
         var pages = xmlDoc.getElementsByTagName("page");
         for (p = 0; p < pages.length; p++) {
-            if (pages[p].getAttribute("cd") == 82) {
+            if (pages[p].getAttribute("cd") == cd) {
                 var tPage = pages[p].childNodes;
                 console.log("Found");
                 break;

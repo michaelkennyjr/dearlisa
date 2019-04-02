@@ -13,12 +13,12 @@ function newDay(cd, op) {
       
     // Go to previous day
     case 1:
-      cd--;
+      cd++;
       break;
       
     // Go to next day
     case 2:
-      cd++;
+      cd--;
       break;
       
     // Go to today

@@ -43,6 +43,7 @@ function xmlLoad(xml, cd) {
         // Change box color
         if (node == "boxc") {
             document.getElementById("scrollbox").style.backgroundColor = item.innerHTML;
+        }
             
         // Change image
         if (node == "image") {

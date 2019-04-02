@@ -18,7 +18,6 @@ client.send();
 // Function to fill in HTML using XML response
 function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
-    console.log(xmlDoc);
     
     // Get nodeList for today's page
     var tPage = xmlDoc.getElementsByTagName("page")[indx].childNodes;

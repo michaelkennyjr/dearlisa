@@ -29,7 +29,7 @@
 	window.onload = xmlGet(cd);
 	document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
 
-	document.getElementById("backone").onclick = function() {newDay(cd, 1);}
+	document.getElementById("backone").onclick = function() {cd = newDay(cd, 1);}
 
 	function resize() {
 	    if (window.innerWidth > 1000) {

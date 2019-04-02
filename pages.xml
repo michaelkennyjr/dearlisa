@@ -15,13 +15,14 @@
     <image>photos/82test.jpg</image>
   </page>
   
-  <page>
-    <date>Tuesday, March 19, 2019</date>
+  <page cd="67">
+    <date>Testing, April 2, 2019</date>
     <allt>
       <para>This has just one paragraph.</para>
+      <ps>P.S. Hello</ps>
     </allt>
-    <layout>fullpho</layout>
-    <image>81.jpg</image>
+    <layout>botpho</layout>
+    <image>photos/copytest.jpg</image>
   </page>
   
 </collection>

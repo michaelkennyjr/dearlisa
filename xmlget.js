@@ -30,6 +30,12 @@ function xmlLoad(xml, cd) {
         var item = tPage.item(i);
         var node = item.nodeName;
         
+        // Change date
+        if (node == "date") {
+            document.getElementById("date").innerHTML = item.innerHTML;
+            document.getElementById("count").innerHTML = cd + " days to go";
+        }
+        
         // Change background color
         if (node == "bg") {
             document.body.style.backgroundColor = item.innerHTML;
@@ -44,28 +50,40 @@ function xmlLoad(xml, cd) {
         if (node == "boxc") {
             document.getElementById("scrollbox").style.backgroundColor = item.innerHTML;
         }
-            
+        
+        // Pull text to add to page
+        if (node == "allt") {
+            var todayText = item.childNodes;
+            var ps = "";
+            for (j = 0; j < todayText.length; j++) {
+                
+                // Add paragraph
+                if (todayText.item(j).nodeName == "para") {
+                    insText += todayText.item(j).innerHTML + "<br><br>";
+                }
+                
+                // Temporarily store P.S., if there is one
+                if (todayText.item(j).nodeName == "ps") {
+                    ps = todayText.item(j).innerHTML;
+                }
+            }
+                
+            // Add signature
+            insText += "Love,<br><br>Michael";
+                
+            // If there's a P.S., add it
+            if (ps != "")
+            {
+                insText += "<br><br>" + ps;
+            }
+                
+            // Replace body text with entirety of insText
+            document.getElementById("bodytext").innerHTML = insText;
+        }
+        
         // Change image
         if (node == "image") {
             document.getElementById("image").src = item.innerHTML;
         }
     }
-    
-    // Get today's full date, store as "today"
-    var today = xmlDoc.getElementsByTagName("date")[indx].childNodes[0].nodeValue;
-    
-    // Fill in body text with each paragraph
-    var insText = "";
-    var todayText = xmlDoc.getElementsByTagName("allt")[indx].childNodes;
-    
-    for (i = 0; i < todayText.length; i++) {
-        if (todayText.item(i).nodeName != "#text") {
-            insText += todayText.item(i).innerHTML + "<br><br>";
-        }
-    }
-    insText += "Love,<br><br>Michael";
-    
-    document.getElementById("date").innerHTML = today;
-    document.getElementById("count").innerHTML = cd + " days to go";
-    document.getElementById("bodytext").innerHTML = insText;
 }

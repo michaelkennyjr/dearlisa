@@ -25,11 +25,8 @@ function xmlLoad(xml, cd) {
     
     var i;
     for (i = 0; i < tPage.length; i++) {
-        if (tPage.item(i).nodeName = "bg") {
-            // document.body.style.backgroundColor = tPage.item(i).innerHTML;
-            // console.log(tPage.item(i).innerHTML);
-            // console.log(document.body.style.backgroundColor);
-            console.log(tPage.item(i).nodeName);
+        if (tPage.item(i).nodeName == "bg") {
+            document.body.style.backgroundColor = tPage.item(i).innerHTML;
         }
     }
     

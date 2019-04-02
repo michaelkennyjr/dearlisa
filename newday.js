@@ -1,6 +1,6 @@
 // Run functions when button is clicked
 
-function button(cd, op) {
+function newDay(cd, op) {
 
   // Change countdown date depending on which button was pressed
   switch(op) {

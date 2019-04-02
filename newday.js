@@ -1,6 +1,8 @@
 // Run functions when button is clicked
 
 function newDay(cd, op) {
+  
+  console.log("Click worked.");
 
   // Change countdown date depending on which button was pressed
   switch(op) {

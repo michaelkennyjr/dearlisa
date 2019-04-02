@@ -43,6 +43,11 @@ function xmlGet(mynum) {
 
         var i;
         for (i = 0; i < tPage.length; i++) {
+            
+            // Reset styles to their stylesheet defaults
+            document.body.style.backgroundColor = "";
+            document.body.style.color = "";
+            document.getElementById("scrollbox").style.backgroundColor = "";
 
             // Get name of next node
             var item = tPage.item(i);

@@ -25,8 +25,16 @@ function xmlLoad(xml, cd) {
     var xmlDoc = xml.responseXML;
     
     // Get nodeList for today's page
-    var tPage = xmlDoc.getElementsByTagName("page")[indx].childNodes;
-    console.log(xmlDoc);
+    var pages = xmlDoc.getElementsByTagName("page");
+    for (p = 0; p < pages.length; p++) {
+        if (pages[p].getAttribute("cd") == 82) {
+            var tPage = pages[p].childNodes;
+            console.log("Found");
+            break;
+        }
+    }
+    
+    // var tPage = xmlDoc.getElementsByTagName("page")[indx].childNodes;
     console.log(tPage);
     
     var i;

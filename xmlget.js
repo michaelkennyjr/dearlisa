@@ -22,8 +22,14 @@ function xmlLoad(xml, cd) {
     // Get nodeList for today's page
     var tPage = xmlDoc.getElementsByTagName("page")[indx].childNodes;
     console.log(tPage);
-    var test = tPage.getElementsByTagName("bg")[0].childNodes[0].innerHTML;
-    console.log(test);
+    
+    var i;
+    var bgcolor;
+    for (i = 0; i < tPage.length; i++) {
+        if (tPage.item(i).nodeName = "#bg") {
+            document.body.style.backgroundColor = tPage.item(i).innerHTML;
+        }
+    }
     
     // Get today's full date, store as "today"
     var today = xmlDoc.getElementsByTagName("date")[indx].childNodes[0].nodeValue;
@@ -32,7 +38,6 @@ function xmlLoad(xml, cd) {
     var insText = "";
     var todayText = xmlDoc.getElementsByTagName("allt")[indx].childNodes;
     
-    var i;
     for (i = 0; i < todayText.length; i++) {
         if (todayText.item(i).nodeName != "#text") {
             insText += todayText.item(i).innerHTML + "<br><br>";

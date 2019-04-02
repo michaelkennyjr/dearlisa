@@ -89,7 +89,7 @@ function xmlLoad(xml, cd) {
         
         // Change layout
         if (node == "layout") {
-            document.getElementById("css").href = item.innerHTML;
+            document.getElementById("css").href = "styles/" + item.innerHTML + ".css";
         }
         
         // Change image

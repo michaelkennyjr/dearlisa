@@ -36,7 +36,29 @@
     </allt>
     <layout>fullpho</layout>
     <tc>black</tc>
-    <image>photos/copytest.jpg</image>
+    <image>photos/68.jpg</image>
   </page>
+  
+  <page cd="69">
+    <date>Sunday, March 31, 2019</date>
+    <allt>
+      <para>You're adorable when you go home and see Blizzard. It's always funny watching you shower him with love while he looks angry and disinterested. (I know he really loves you though.)</para>
+    </allt>
+    <layout>botpho</layout>
+    <bg>white</bg>
+    <tc>black</tc>
+    <image>photos/69.jpg</image>
+  </page>
+  
+  <page cd="70">
+    <date>Saturday, March 30, 2019</date>
+    <allt>
+      <para>I have so much admiration for you and the relationship you've established with Nariah. You bring moments of positivity and fun to a child's life and give her a positive influence. You can't change the world, but you can make a difference, and I'm so proud of you for doing that.</para>
+    </allt>
+    <layout>botpho</layout>
+    <bg>rgb(174, 220, 254)</bg>
+    <tc>black</tc>
+    <image>photos/70.jpg</image>
+  </page>  
   
 </collection>

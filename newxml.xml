@@ -10,6 +10,8 @@
       <para>This is my last paragraph.</para>
     </allt>
     <layout>botpho</layout>
+    <bg>rgb(121, 223, 189)</bg>
+    <tc>white</tc>
     <image>82.jpg</image>
   </page>
   

@@ -24,11 +24,25 @@ function xmlLoad(xml, cd) {
     console.log(tPage);
     
     var i;
+    var node;
     for (i = 0; i < tPage.length; i++) {
         
+        // Get name of next node
+        node = tPage.item(i).nodeName;
+        
         // Change background color
-        if (tPage.item(i).nodeName == "bg") {
+        if (node == "bg") {
             document.body.style.backgroundColor = tPage.item(i).innerHTML;
+        }
+        
+        // Change text color
+        if (node == "tc") {
+            document.body.style.color = tPage.item(i).innerHTML;
+        }
+            
+        // Change image
+        if (node == "image") {
+            document.getElementById("image").src = tPage.item(i).innerHTML;
         }
     }
     

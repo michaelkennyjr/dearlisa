@@ -106,13 +106,19 @@ function xmlGet(mynum) {
             }
 
             // Change layout
+            var sty = "";
             if (node == "layout") {
-                document.getElementById("css").href = "styles/" + item.innerHTML + ".css";
+                sty = item.innerHTML;
+                document.getElementById("css").href = "styles/" + sty + ".css";
             }
 
             // Change image
             if (node == "image") {
-                document.getElementById("image").src = item.innerHTML;
+                if (sty == "fullpho") {
+                    document.body.backgroundImage = "url(" + item.innerHTML + ")";
+                } else {
+                    document.getElementById("image").src = item.innerHTML;
+                }
             }
         }
     }

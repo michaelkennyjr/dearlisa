@@ -54,6 +54,7 @@ function xmlLoad(xml, cd) {
         // Pull text to add to page
         if (node == "allt") {
             var todayText = item.childNodes;
+            var insText = "";
             var ps = "";
             for (j = 0; j < todayText.length; j++) {
                 

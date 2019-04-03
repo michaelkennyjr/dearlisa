@@ -27,7 +27,9 @@ function resize() {
             pic.style.bottom = "0";
 	// If image is narrower than frame, stretch vertically and keep in middle	
 	} else {
+	    console.log("pic.style.height is " + pic.style.height + " and frame.clientHeight is " + frame.clientHeight);
 	    pic.style.height = frame.clientHeight;
+	    console.log("Now pic.style.height is " + pic.style.height);
 	    pic.style.width = frame.clientHeight * picratio + "px";
 	    pic.style.left = (frame.clientWidth - pic.style.width) / 2 + "px";
             pic.style.bottom = "0";

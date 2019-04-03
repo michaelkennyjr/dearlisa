@@ -31,7 +31,7 @@ function resize() {
 	    pic.style.height = frame.clientHeight + "px";
 	    console.log("Now pic.style.height is " + pic.style.height);
 	    pic.style.width = frame.clientHeight * picratio + "px";
-	    pic.style.left = (frame.clientWidth - pic.style.width) / 2 + "px";
+	    pic.style.left = (frame.clientWidth - pic.clientWidth) / 2 + "px";
             pic.style.bottom = "0";
 	}
 	    

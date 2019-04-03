@@ -19,14 +19,14 @@ function resize() {
 	    
 	// If image is wider than frame, stretch horizontally and push to bottom
 	if (picratio > frameratio) {
-            pic.clientWidth = "100%";
-	    pic.clientHeight = "";
+            pic.style.width = "100%";
+	    pic.style.height = 100 / picratio + "%";
 	    pic.style.left = "0";
             pic.style.bottom = "0";
 	// If image is narrower than frame, stretch vertically and keep in middle	
 	} else {
-	    pic.clientHeight = "100%";
-            pic.clientWidth = "";
+	    pic.style.height = "100%";
+            pic.style.width = 100 * picratio + "%";
 	    pic.style.left = (frame.width - pic.clientWidth) / 2 + "px";
             pic.style.bottom = "0";
 	}

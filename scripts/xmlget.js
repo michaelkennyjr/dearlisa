@@ -1,6 +1,6 @@
 // Make XML request and process response
 
-function xmlGet(mynum) {
+function xmlGet(mynum, callback) {
     
     console.log("xmlGet for " + mynum);
 
@@ -124,7 +124,7 @@ function xmlGet(mynum) {
             }
             
             // Resize
-	    resize();
+	    callback();
         }
     }
 }

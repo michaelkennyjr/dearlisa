@@ -2,7 +2,7 @@
 
 function xmlGet(mynum, callback) {
 	
-    console.log("Callback function is " + callback.name);
+    console.log("Callback function is " + callback().name);
     
     console.log("xmlGet for " + mynum);
 

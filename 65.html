@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: rgb(212, 218, 204);
+    }
+    
+    @media (max-width: 1000px) {
+      body {
+        -webkit-text-size-adjust: none;
+      }
+        
+      div {
+        font-size: 2.2vh;
+      }
+        
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Thursday, April 4, 2019</h1>
+    <h2>65 days to go</h2>
+    The day we got engaged is a big blur in my mind. It was one of the best days of my life! But man, what a whirlwind. I can only imagine what getting married is going to be like. I want us to do everything we can to sloooow it doooown!<br><br>
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="photos/engage_2.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

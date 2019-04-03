@@ -2,7 +2,7 @@
 
 function newDay(cd, op) {
   
-  console.log("Click worked.");
+  console.log("New day");
 
   // Change countdown date depending on which button was pressed
   switch(op) {
@@ -27,8 +27,6 @@ function newDay(cd, op) {
       var today = new Date();
       cd = Math.ceil((wedDate - today) / 1000 / 60 / 60 / 24);
   }
-  
-  console.log(cd);
   
   // Run xmlGet to reset page to new day
   xmlGet(cd);

@@ -1,6 +1,7 @@
 function resize() {
 	
-    console.log("Resize");
+    var d = new Date();
+    console.log("Resize" + d);
 	
     if (window.innerWidth > 1000) {
 	    

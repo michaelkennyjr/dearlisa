@@ -21,27 +21,26 @@ function resize() {
 	    
 	// If image is wider than frame, stretch horizontally and push to bottom
 	if (picratio > frameratio) {
-            // pic.style.width = "100%";
-	    // pic.style.height = 100 / picratio + "%";
-	    pic.style.width = frame.clientWidth + "px";
-	    pic.style.height = frame.clientWidth / picratio + "px";
+	    // pic.style.width = frame.clientWidth + "px";
+	    // pic.style.height = frame.clientWidth / picratio + "px";
 	    pic.style.left = "0";
+	    pic.style.right = "0";
             pic.style.bottom = "0";
+	    pic.style.top = frame.clientWidth / picratio + "px";
 	// If image is narrower than frame, stretch vertically and keep in middle	
 	} else {
-	    // pic.style.height = "100%";
-            // pic.style.width = 100 * picratio + "%";
-	    pic.style.height = frame.clientHeight;
-	    pic.style.width = frame.clientHeight * picratio + "px";
+	    // pic.style.height = frame.clientHeight;
+	    // pic.style.width = frame.clientHeight * picratio + "px";
 	    pic.style.left = (frame.clientWidth - pic.style.width) / 2 + "px";
+	    pic.style.right = (frame.clientWidth - pic.style.width) / 2 + "px";
             pic.style.bottom = "0";
+	    pic.style.top = frame.clientHeight + "px";
 	}
 	    
-        var imgh = pic.height;
+        var imgh = pic.clientHeight;
 	var winw = window.innerWidth;
-	var bot = imgh + winw * 0.05;
 
-	document.getElementById("scrollbox").style.bottom = bot + "px";
+	document.getElementById("scrollbox").style.bottom = (imgh + winw * 0.05) + "px";
 	document.getElementById("scrollbox").style.left = "5%";
 	document.getElementById("scrollbox").style.right = "5%";
     }

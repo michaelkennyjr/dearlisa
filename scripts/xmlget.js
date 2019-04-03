@@ -1,6 +1,8 @@
 // Make XML request and process response
 
 function xmlGet(mynum) {
+    
+    console.log("xmlGet for " + mynum);
 
     // Get countdown number from URL and convert to XML index
     var url = window.location.pathname;

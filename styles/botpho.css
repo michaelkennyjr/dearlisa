@@ -34,8 +34,6 @@
     img {
       position: absolute;
       bottom: 0;
-      object-fit: contain;
-      object-position: bottom;
     }
     
     div {

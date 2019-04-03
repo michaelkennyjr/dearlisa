@@ -122,6 +122,9 @@ function xmlGet(mynum) {
                     document.getElementById("image").src = item.innerHTML;
                 }
             }
+            
+            // Resize
+            resize();
         }
     }
 }

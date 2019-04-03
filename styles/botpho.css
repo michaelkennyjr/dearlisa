@@ -30,10 +30,14 @@
       right: 0;
       top: 50%;
     }
+
+    #matte {
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+    }
     
     img {
-      width: 100%;
-      height: 100%;
       object-fit: contain;
       object-position: bottom;
     }

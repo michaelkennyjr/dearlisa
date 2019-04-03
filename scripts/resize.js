@@ -21,20 +21,16 @@ function resize() {
 	    
 	// If image is wider than frame, stretch horizontally and push to bottom
 	if (picratio > frameratio) {
-	    // pic.style.width = frame.clientWidth + "px";
-	    // pic.style.height = frame.clientWidth / picratio + "px";
+	    pic.style.width = frame.clientWidth + "px";
+	    pic.style.height = frame.clientWidth / picratio + "px";
 	    pic.style.left = "0";
-	    pic.style.right = "0";
             pic.style.bottom = "0";
-	    pic.style.top = frame.clientWidth / picratio + "px";
 	// If image is narrower than frame, stretch vertically and keep in middle	
 	} else {
-	    // pic.style.height = frame.clientHeight;
-	    // pic.style.width = frame.clientHeight * picratio + "px";
+	    pic.style.height = frame.clientHeight;
+	    pic.style.width = frame.clientHeight * picratio + "px";
 	    pic.style.left = (frame.clientWidth - pic.style.width) / 2 + "px";
-	    pic.style.right = (frame.clientWidth - pic.style.width) / 2 + "px";
             pic.style.bottom = "0";
-	    pic.style.top = frame.clientHeight + "px";
 	}
 	    
         var imgh = pic.clientHeight;

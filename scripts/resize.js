@@ -21,14 +21,22 @@ function resize() {
 	    
 	// If image is wider than frame, stretch horizontally and push to bottom
 	if (picratio > frameratio) {
+	    console.log("Picture width was " + pic.style.width);
 	    pic.style.width = frame.clientWidth + "px";
+	    console.log("Picture width is now " + pic.style.width);
+	    console.log("Picture height was " + pic.style.height);
 	    pic.style.height = frame.clientWidth / picratio + "px";
+	    console.log("Picture height is now " + pic.style.height);
 	    pic.style.left = "0";
             pic.style.bottom = "0";
 	// If image is narrower than frame, stretch vertically and keep in middle	
 	} else {
+	    console.log("Picture height was " + pic.style.height);
 	    pic.style.height = frame.clientHeight;
+	    console.log("Picture height is now " + pic.style.height);
+	    console.log("Picture width was " + pic.style.width);
 	    pic.style.width = frame.clientHeight * picratio + "px";
+	    console.log("Picture width is now " + pic.style.width);
 	    pic.style.left = (frame.clientWidth - pic.style.width) / 2 + "px";
             pic.style.bottom = "0";
 	}

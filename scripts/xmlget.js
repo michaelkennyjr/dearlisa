@@ -125,7 +125,6 @@ function xmlGet(mynum) {
             
             // Resize
 	    resize();
-            }
         }
     }
 }

@@ -12,6 +12,7 @@ function resize() {
 	    
 	// Get aspect ratio of image
 	var pic = document.getElementById("image");
+	    console.log(pic.src);
 	var picratio = pic.naturalWidth / pic.naturalHeight;
 	    
 	console.log("pic whr: " + pic.naturalWidth + ", " + pic.naturalHeight + ", " + picratio);

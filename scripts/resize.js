@@ -1,4 +1,7 @@
 function resize() {
+	
+    console.log("Resize");
+	
     if (window.innerWidth > 1000) {
 	    
 	// DESKTOP RESIZING RULES
@@ -12,12 +15,10 @@ function resize() {
 	// Get aspect ratio of image
 	var pic = document.getElementById("image");
 	var picratio = pic.naturalWidth / pic.naturalHeight;
-	console.log("pic whr: " + pic.naturalWidth + ", " + pic.naturalHeight + ", " + picratio);
 	
 	// Get aspect ratio of frame
 	var frame = document.getElementById("frame");
 	var frameratio = frame.clientWidth / frame.clientHeight;
-	console.log("frame whr: " + frame.clientWidth + ", " + frame.clientHeight + ", " + frameratio);
 	    
 	// If image is wider than frame, stretch horizontally and push to bottom
 	if (picratio > frameratio) {
@@ -27,9 +28,7 @@ function resize() {
             pic.style.bottom = "0";
 	// If image is narrower than frame, stretch vertically and keep in middle	
 	} else {
-	    console.log("pic.style.height is " + pic.style.height + " and frame.clientHeight is " + frame.clientHeight);
 	    pic.style.height = frame.clientHeight + "px";
-	    console.log("Now pic.style.height is " + pic.style.height);
 	    pic.style.width = frame.clientHeight * picratio + "px";
 	    pic.style.left = (frame.clientWidth - pic.clientWidth) / 2 + "px";
             pic.style.bottom = "0";

@@ -18,8 +18,9 @@
     </div>
     <div id="backone" style="width:200px; height:100px; background-color:green; z-index: 2"></div>
 	
-    <script src="xmlget.js"></script>
-    <script src="newday.js"></script>
+    <script src="scripts/xmlget.js"></script>
+    <script src="scripts/newday.js"></script>
+    <script src="scripts/resize.js"></script>
     <script>
 	// Get today's countdown number
 	var wedDate = new Date(2019, 5, 8);
@@ -32,19 +33,6 @@
 	document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
 
 	document.getElementById("backone").onclick = function() {cd = newDay(cd, 1);}
-
-	function resize() {
-	    if (window.innerWidth > 1000) {
-		document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
-		document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
-	    } else {
-		var imgh = document.getElementById("image").height;
-		var winw = window.innerWidth;
-		var bot = imgh + winw * 0.05;
-
-		document.getElementById("scrollbox").style.bottom = bot + "px";
-		document.getElementById("scrollbox").style.left = "5%";
-		document.getElementById("scrollbox").style.right = "5%";
 	    }
 	}
     </script>

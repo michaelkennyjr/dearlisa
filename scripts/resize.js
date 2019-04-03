@@ -16,7 +16,7 @@ function resize() {
 	
 	// Get aspect ratio of frame
 	var frame = document.getElementById("frame");
-	var frameratio = frame.clientWidth / frame.ClientHeight;
+	var frameratio = frame.clientWidth / frame.clientHeight;
 	console.log("frame whr: " + frame.clientWidth + ", " + frame.clientHeight + ", " + frameratio);
 	    
 	// If image is wider than frame, stretch horizontally and push to bottom

@@ -25,6 +25,17 @@
     <tc>black</tc>
     <image>photos/travel_backpack.jpg</image>
   </page>
+  
+    <page cd="61">
+    <date>Monday, April 8, 2019</date>
+    <allt>
+      <para>Every sunset should be viewed from a hot tub. Just looking at this picture gets those romantic feelings stirred up again.</para>
+    </allt>
+    <layout>botpho</layout>
+    <bg>rgb(203, 211, 222)</bg>
+    <tc>black</tc>
+    <image>photos/iceland_sunset.jpg</image>
+  </page>
 
   <page cd="66">
     <date>Wednesday, April 3, 2019</date>

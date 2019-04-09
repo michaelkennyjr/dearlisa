@@ -158,7 +158,7 @@ function newDay(cd, op, callback) {
   }
   
   // Run xmlGet to reset page to new day
-  callback(cd, resize);
+  callback();
   
   // Return the new countdown number
   return cd;

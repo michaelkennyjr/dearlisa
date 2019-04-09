@@ -3,6 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link id="css" rel="stylesheet" type="text/css" href="styles/botpho.css">
+    <link rel="shortcut icon" href="#">
 </head>
 
 <body>
@@ -30,7 +31,10 @@
 	};
 	    
 	// When window is resized: resize
-	document.getElementsByTagName("BODY")[0].onresize = function() {resize();};
+	document.getElementsByTagName("BODY")[0].onresize = function() {
+	    console.log("Page is resizing.");
+	    resize();
+	};
 	
 	// BACK BUTTON: Take XML back a day and resize
 	document.getElementById("backone").onclick = function() {

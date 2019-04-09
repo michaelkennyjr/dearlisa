@@ -1,7 +1,5 @@
 // Get XML data for given countdown number; resize page when done
 function xmlGet(mynum, callback) {
-	
-    console.log("Callback function is " + callback().name);
     
     console.log("xmlGet for " + mynum);
 

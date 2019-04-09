@@ -17,9 +17,7 @@
     <div id="backone" style="width:200px; height:100px; background-color:green; z-index: 2"></div>
     <div id="fwdone" style="width:200px; height:100px; top:150px; background-color:yellow; z-index: 2"></div>
     	
-    <script src="scripts/xmlget.js"></script>
-    <script src="scripts/newday.js"></script>
-    <script src="scripts/resize.js"></script>	
+    <script src="scripts/allscript.js"></script>	
     <script>
 	// Get today's countdown number
 	var wedDate = new Date(2019, 5, 8);
@@ -37,13 +35,11 @@
 	// BACK BUTTON: Take XML back a day and resize
 	document.getElementById("backone").onclick = function() {
 	    cd = newDay(cd, 1);
-	    resize();
 	};
 	    
 	// FORWARD BUTTON: Take XML forward a day and resize
 	document.getElementById("fwdone").onclick = function() {
             cd = newDay(cd, 2);
-	    resize();
 	};
 	
     </script>

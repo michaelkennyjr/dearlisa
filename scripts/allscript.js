@@ -123,7 +123,7 @@ function xmlGet(mynum, callback) {
             }
             
             // Resize
-	    callback(cd, resize);
+	    callback();
         }
     }
 }
@@ -158,7 +158,7 @@ function newDay(cd, op, callback) {
   }
   
   // Run xmlGet to reset page to new day
-  callback();
+  callback(cd, resize);
   
   // Return the new countdown number
   return cd;

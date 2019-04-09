@@ -26,7 +26,7 @@
 	
 	// When page is loaded: Load day from XML and resize
 	window.onload = function() {
-	    xmlGet(cd, resize());
+	    xmlGet(cd, resize);
 	};
 	    
 	// When window is resized: resize
@@ -34,12 +34,12 @@
 	
 	// BACK BUTTON: Take XML back a day and resize
 	document.getElementById("backone").onclick = function() {
-	    cd = newDay(cd, 1);
+	    cd = newDay(cd, 1, xmlGet(cd, resize));
 	};
 	    
 	// FORWARD BUTTON: Take XML forward a day and resize
 	document.getElementById("fwdone").onclick = function() {
-            cd = newDay(cd, 2);
+            cd = newDay(cd, 2, xmlGet(cd, resize));
 	};
 	
     </script>

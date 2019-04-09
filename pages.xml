@@ -14,6 +14,17 @@
     <tc>blue</tc>
     <image>photos/82test.jpg</image>
   </page>
+  
+  <page cd="60">
+    <date>Tuesday, April 9, 2019</date>
+    <allt>
+      <para>I love that you love to travel as much as I do. Travel is one of the first things we connected over, and you've been to so many amazing places. I hope you don't mind going back to all of them, because I want to go everywhere with you!</para>
+    </allt>
+    <layout>botpho</layout>
+    <bg>rgb(197, 202, 209)</bg>
+    <tc>black</tc>
+    <image>photos/travel_backpack.jpg</image>
+  </page>
 
   <page cd="66">
     <date>Wednesday, April 3, 2019</date>

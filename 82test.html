@@ -20,6 +20,9 @@
     	
     <script src="scripts/allscript.js"></script>	
     <script>
+	// Global variable to prevent bubbling
+	var exec = 1;
+	
 	// Get today's countdown number
 	var wedDate = new Date(2019, 5, 8);
 	var today = new Date();
@@ -27,7 +30,10 @@
 	
 	// When page is loaded: Load day from XML and resize
 	window.onload = function() {
-	    xmlGet(cd, resize);
+            if (exec == 1) {
+	        xmlGet(cd, resize);
+		exec = 0;
+	    }
 	};
 	    
 	// When window is resized: resize

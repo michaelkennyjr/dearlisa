@@ -36,7 +36,9 @@
   </div>
   <script>
     window.onload = function() {resize()};
-    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {
+      console.log("Page is resizing");
+      resize()};
     
     function resize() {
       if (window.innerWidth > 1000) {

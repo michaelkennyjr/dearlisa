@@ -123,7 +123,7 @@ function xmlGet(mynum, callback) {
             }
             
             // Resize
-	    callback();
+	    callback(cd, resize);
         }
     }
 }

@@ -129,7 +129,7 @@ function xmlGet(mynum, callback) {
 }
 
 // Change day based on button click
-function newDay(cd, op) {
+function newDay(cd, op, callback) {
   
   console.log("New day");
 
@@ -158,7 +158,7 @@ function newDay(cd, op) {
   }
   
   // Run xmlGet to reset page to new day
-  xmlGet(cd, resize);
+  callback(cd, resize);
   
   // Return the new countdown number
   return cd;

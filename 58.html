@@ -1,0 +1,58 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: rgb(192, 160, 141);
+      color: black;
+    }
+    
+    @media (max-width: 1000px) {
+      body {
+        -webkit-text-size-adjust: none;
+      }
+        
+      div {
+        font-size: 2.2vh;
+      }
+        
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="background-color:rgb(242, 193, 140); width:100%; height:10vh; z-index:-2; position:absolute; left:0; top:0"></div>
+  <div style="background-color:rgb(205, 237, 215); width:100%; height:10vh; z-index:-2; position:absolute; left:0; top:10%"></div>
+  <div style="background-color:rgb(245, 231, 184); width:100%; height:10vh; z-index:-2; position:absolute; left:0; top:20%"></div>
+  <div style="background-color:rgb(240, 202, 214); width:100%; height:10vh; z-index:-2; position:absolute; left:0; top:30%"></div>
+  <div id="scrollbox">
+    <h1>Thursday, April 11, 2019</h1>
+    <h2>58 days to go</h2>
+    I love being a part of your Perfect Family! And I appreciate being introduced to Rainbow Cone.<br><br>
+    I still have dreams about that ice cream! BEAUTIFUL HAUNTING DREAMS!<br><br>
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="photos/laura_donna_ice.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

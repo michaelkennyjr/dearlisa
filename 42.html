@@ -30,7 +30,7 @@
     #frame {
       position: fixed;
       left: 0;
-      top: calc(40% + 1.25vw);
+      top: calc(55% + 1.25vw);
       right: 0;
       bottom: 0;
     }
@@ -63,6 +63,12 @@
       color: white;
     }
     
+    #gif {
+      position: fixed;
+      width: 100%;
+      bottom: 35%;
+    }
+    
     @media (max-width: 1000px) {
       body {
         -webkit-text-size-adjust: none;
@@ -89,6 +95,7 @@
   <div id="frame">
     <img src="photos/sox_young.jpg">
   </div>
+  <img id="gif" src="http://mlb.mlb.com/images/7/7/2/93845772/042514_cws_abreu_walkoff_twt_2_6auaqk44.gif">
   <script>
     window.onload = function() {resize()};
     document.getElementsByTagName("BODY")[0].onresize = function() {resize()};

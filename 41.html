@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fullbot.css">
+  <style type="text/css">
+    html {
+      background-color: rgb(59, 91, 142);
+      color: white;
+    }
+    
+    @media (max-width: 1000px) {
+      body {
+        -webkit-text-size-adjust: none;
+      }
+        
+      div {
+        font-size: 2.2vh;
+      }
+        
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Sunday, April 28, 2019</h1>
+    <h2>41 days to go</h2>
+    I greatly enjoyed taking you to Evanston when we first started dating and showing you the ol' stomping grounds. Yes, I know that that frat house was and is disgusting. In college I looked past it. (Now I wouldn't be caught dead in that disaster.)<br><br>
+    Plus we took a walk up to the Baha'i Temple and snapped this great pic!<br><br>
+    Don't look at my forearm. Just look at our faces. We're so young and happy! We're still so young and happy, and I love it.<br><br>
+    Love,<br><br>
+    Michael
+  </div>
+  <div id="frame">
+    <img src="photos/evanston_bahai.jpg">
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

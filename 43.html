@@ -1,0 +1,89 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <style type="text/css">
+  * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      width: 100%;
+      height: 100%;
+      background: url(photos/IMG_7716.png) no-repeat center center fixed;
+      background-color: rgb(89, 56, 29);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    
+    body {height: 100%;}
+    
+    #scrollbox {
+      position: fixed;
+      left: 5%;
+      bottom: 5vw;
+      right: 5%;
+      top: 60%;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 28px;
+      overflow: auto;
+    }
+    
+    div {
+      font-family: 'Roboto', sans-serif;
+      text-align: justify;
+      font-weight: 300;
+    }
+    
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      text-align: left;
+      font-size: 18pt;
+      font-weight: 700;
+    }
+    
+    h1 {margin: 4px auto;}
+    h2 {margin: 0 auto 32px auto;}
+    
+    @media (max-width: 1000px) {
+      body {
+        -webkit-text-size-adjust: none;
+      }
+        
+      div {
+        font-size: 2.2vh;
+      }
+        
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollbox">
+    <h1>Friday, April 26, 2019</h1>
+    <h2>43 days to go</h2>
+    The way you look at me when I put on my blazer or one of my suits... MM! It almost makes me wish I had more occasions to dress up for. The appeal definitely wouldn't wear off, right?<br><br>
+    Love,<br><br>
+    Michael<br><br>
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

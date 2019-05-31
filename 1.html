@@ -1,0 +1,104 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <style type="text/css">
+  * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      background-color: #000;
+    }
+    
+    body {height: 100%;}
+    
+    #scrollbox {
+      position: fixed;
+      left: 5%;
+      right: 5%;
+      top: 5vw;
+      bottom: 5vw;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 28px;
+      overflow: auto;
+    }
+    
+    div {
+      font-family: 'Roboto', sans-serif;
+      text-align: justify;
+      font-weight: 300;
+    }
+    
+    #cdown {
+      position: fixed;
+      width: 100%;
+      top: 10%;
+      bottom: 10%;
+      font-weight: 700;
+      font-size: 80vh;
+      color: rgb(255, 255, 255, 0.5);
+      text-align: center;
+      -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+    }
+    
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      text-align: left;
+      font-size: 18pt;
+      font-weight: 700;
+    }
+    
+    h1 {margin: 4px auto;}
+    h2 {margin: 0 auto 32px auto;}
+    
+    @media (max-width: 1000px) {
+      body {
+        -webkit-text-size-adjust: none;
+      }
+        
+      div {
+        font-size: 2.2vh;
+      }
+        
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="cdown">1</div>
+  <div id="scrollbox">
+    <h1>Friday, June 7, 2019</h1>
+    <h2>One day to go</h2>
+    One hundred and thirteen love letters later, we've finally reached the end of this little project. I hope this website has brought you as much joy as it's brought me.<br><br>
+    Your real, final love letter will be in your hands tonight. Until then, all I can say is that I'm so thrilled to be starting the next chapter in our lives together.<br><br>
+    Lisa, I love you with all my heart.<br><br>
+    Michael
+<br><br>
+    Love,<br><br>
+    Michael<br><br>
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>

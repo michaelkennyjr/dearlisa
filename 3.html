@@ -1,0 +1,105 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <style type="text/css">
+  * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      width: 100%;
+      height: 100%;
+      background: url(photos/3.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    
+    body {height: 100%;}
+    
+    #scrollbox {
+      position: fixed;
+      left: 5%;
+      right: 5%;
+      bottom: 5vw;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 28px;
+      overflow: auto;
+    }
+    
+    div {
+      font-family: 'Roboto', sans-serif;
+      text-align: justify;
+      font-weight: 300;
+    }
+    
+    #cdown {
+      position: fixed;
+      width: 100%;
+      bottom: 45%;
+      top: 0;
+      font-weight: 700;
+      font-size: 45vh;
+      color: rgb(255, 255, 255, 0.5);
+      text-align: center;
+      -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+    }
+    
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      text-align: left;
+      font-size: 18pt;
+      font-weight: 700;
+    }
+    
+    h1 {margin: 4px auto;}
+    h2 {margin: 0 auto 32px auto;}
+    
+    @media (max-width: 1000px) {
+      body {
+        -webkit-text-size-adjust: none;
+      }
+        
+      div {
+        font-size: 2.2vh;
+      }
+        
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="cdown">3</div>
+  <div id="scrollbox">
+    <h1>Wednesday, June 5, 2019</h1>
+    <h2>3 days to go</h2>
+    Wedding planning has truly been a marathon, but with enough preparation, determination, and cooperation, we're about to cross the finish line. Even though it didn't always go smoothly, we've been partners every step of the way. After a long and winding road, I'm ready for the medal ceremony!<br><br>
+    Love,<br><br>
+    Michael<br><br>
+  </div>
+  <script>
+    window.onload = function() {resize()};
+    document.getElementsByTagName("BODY")[0].onresize = function() {resize()};
+    
+    function resize() {
+      if (window.innerWidth > 1000) {
+        document.getElementById("scrollbox").style.left = "calc((100% - 900px) / 2)";
+        document.getElementById("scrollbox").style.right = "calc((100% - 900px) / 2)";
+      } else {
+        document.getElementById("scrollbox").style.left = "5%";
+        document.getElementById("scrollbox").style.right = "5%";
+      }
+    }
+  </script>
+</body>
+</html>
